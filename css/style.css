@@ -508,6 +508,128 @@ h1, h2, h3, h4, h5, h6 {
     border-color: white;
 }
 
+/* Form Styles */
+.form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    font-size: 0.95rem;
+}
+
+.required {
+    color: #ef4444;
+    margin-left: 0.25rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    color: var(--color-text);
+    background-color: var(--color-surface);
+    transition: var(--transition);
+}
+
+.form-input::placeholder {
+    color: #cbd5e1;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: '';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--color-text-muted);
+    pointer-events: none;
+}
+
+.form-select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 2.5rem;
+}
+
+.btn-block {
+    width: 100%;
+    position: relative;
+}
+
+/* Loader for submit button */
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Form Message Styles */
+.form-message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    font-weight: 500;
+}
+
+.form-message.success {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.form-message.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
 /* =========================================
    Media Queries
    ========================================= */
@@ -558,6 +680,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     .btn-lg {
         width: 100%;
+    }
+    .form-wrapper {
+        padding: 1.5rem;
     }
 }
 
