@@ -14,6 +14,6 @@ run_command: git add .
 3. ユーザーが承認（または新しいメッセージを入力）したら、その内容でコミットを実行します。
 run_command: git commit -m "[AI suggested or user provided message]"
 
-4. リモートレポジトリのメインブランチ（main）へ送信します。
+4. リモートレポジトリの作業ブランチへ送信します。
 // turbo
-run_command: git push origin main
+run_command: git push origin [作業ブランチ]
