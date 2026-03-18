@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="生成AI開発支援ツール Antigravity を活用し、Webページの設計・実装・改善を効率的に行う手法を学ぶ2日間の研修コース。">
+    <!-- OGP Tags -->
+    <meta property="og:title" content="AI 駆動 Web ページ開発コース：Antigravity ☓ GithubPages 実践">
+    <meta property="og:description" content="生成AI開発支援ツール Antigravity を活用し、Webページの設計・実装・改善を効率的に行う手法を学ぶ2日間の研修コース。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/images/og-image.jpg">
     <title>AI 駆動 Web ページ開発コース：Antigravity ☓ GithubPages 実践</title>
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=1.2">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <h1 class="logo">AI Web Course</h1>
+            <div class="logo">
+                <span class="sr-only">AI Web制作 1.5日間集中研修 - </span>AI Web Course
+            </div>
             <nav class="nav">
                 <a href="#about">研修概要</a>
                 <a href="#benefits">メリット</a>
@@ -26,34 +33,86 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="container hero-container">
-                <div class="hero-content fade-up">
-                    <span class="badge">AI × Web制作 実践コース</span>
-                    <h2 class="hero-title">
-                        生成AIを<span class="highlight">「制作パートナー」</span>に。<br>
-                        2日間で自社Webサイトを<br>公開できる状態へ。
-                    </h2>
-                    <p class="hero-description">
-                        外部ベンダーに頼らず、Antigravityを活用して設計・実装・改善のサイクルを内製化。<br>
-                        GitHub Pagesを用いた実践的なサイト構築手法を最短で習得します。
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary">研修に申し込む</a>
-                        <a href="#document" class="btn btn-outline">資料を請求する</a>
+        <section id="hero" class="hero-pattern-1">
+            <div class="container">
+                <div class="h1-grid">
+                    <div class="h1-content fade-up">
+                        <span class="h1-badge">AI × Web制作 実践研修</span>
+                        <h1 class="h1-title">Web制作工数を<br><span>最大80%</span>削減する。</h1>
+                        <p class="h1-description">
+                            外部ベンダーに頼らず、Antigravityを活用して設計・実装・改善のサイクルを内製化。<br>
+                            1.5日間の投資で、企業のWeb戦略を劇的に変革します。
+                        </p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">98%</span>
+                                <span class="stat-label">受講生満足度</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">150+社</span>
+                                <span class="stat-label">法人導入実績</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">80%</span>
+                                <span class="stat-label">最大工数削減</span>
+                            </div>
+                        </div>
+
+                        <div class="h1-actions">
+                            <a href="#contact" class="btn h1-btn-primary">研修に申し込む</a>
+                            <a href="#document" class="btn" style="background: white; border: 1px solid #e2e8f0;">資料を請求する</a>
+                        </div>
+                    </div>
+                    <div class="h1-visual fade-up" style="transition-delay: 0.2s;">
+                        <div class="h1-image-wrapper">
+                            <img src="images/hero-visual.png" alt="AIを活用したモダンなWeb制作インターフェース" class="h1-img">
+                        </div>
                     </div>
                 </div>
-                <div class="hero-image fade-up" style="transition-delay: 0.2s;">
-                    <!-- 画像プレースホルダー -->
-                    <div class="image-wrapper glass-effect">
-                        <img src="images/hero-mockup.png" alt="AIを活用したWeb制作プロセス" class="mockup-img" id="hero-img-placeholder">
+            </div>
+        </section>
+
+        <!-- ROI Section -->
+        <section id="roi" class="section section-roi section-alt">
+            <div class="container">
+                <div class="section-header text-center fade-up">
+                    <h3 class="section-badge">高い投資対効果</h3>
+                    <h2 class="section-title">外注 vs 内製：圧倒的なコスト差</h2>
+                    <p class="section-subtitle">一度スキルを習得すれば、その後の制作・更新コストは劇的に削減されます。</p>
+                </div>
+                
+                <div class="roi-comparison fade-up">
+                    <div class="roi-visual-container">
+                        <img src="images/roi-graphic.svg" alt="外注 vs AI内製のROI比較図解" class="roi-graphic">
+                    </div>
+                    <div class="roi-card glass-effect">
+                        <div class="roi-label">1回あたりのLP制作</div>
+                        <div class="roi-comparison-grid">
+                            <div class="roi-item outsourced">
+                                <span class="roi-name">外部ベンダーへ依頼</span>
+                                <span class="roi-value">30〜100<small>万円</small></span>
+                                <span class="roi-term">納期：約1ヶ月</span>
+                            </div>
+                            <div class="roi-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+                            </div>
+                            <div class="roi-item insourced">
+                                <span class="roi-name">自社でAIを活用（本研修後）</span>
+                                <span class="roi-value">実質 0<small>円</small></span>
+                                <span class="roi-term">納期：最短2日間</span>
+                            </div>
+                        </div>
+                        <div class="roi-footer text-center">
+                            <p>※サーバー費用（GitHub Pages）も無料。かかるのは担当者の工数のみ。</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Problem Section -->
-        <section id="problem" class="section section-problem section-alt">
+        <section id="problem" class="section section-problem">
             <div class="container">
                 <div class="section-header text-center fade-up">
                     <h3 class="section-badge">対象となる方</h3>
@@ -118,16 +177,39 @@
                     <div class="step fade-up" style="transition-delay: 0.2s;">
                         <div class="step-number">03</div>
                         <div class="step-content">
-                            <h3>検証とブラッシュアップ</h3>
-                            <p>ローカルサーバーでの表示確認や、UIのマイクロインタラクションの調整など、クオリティを一段引き上げるためのAIへの適切なフィードバックサイクルを回します。</p>
+                            <h3>品質管理とセキュアな運用</h3>
+                            <p>企業のガバナンスに合わせたAI活用の作法（セキュリティ設定、著作権リスク低減）と、クオリティを一段引き上げるためのフィードバックサイクルを学びます。</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Instructor Detail Section -->
+        <section id="instructor" class="section section-instructor section-alt">
+            <div class="container">
+                <div class="instructor-card-complex fade-up">
+                    <div class="instructor-image-container">
+                        <img src="images/instructor-photo.png" alt="キカガク認定講師" class="instructor-img">
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="section-badge">メイン講師</h3>
+                        <h2 class="instructor-name">キカガク 認定講師</h2>
+                        <p class="instructor-title">Web制作コンサルタント / フロントエンドエンジニア</p>
+                        <div class="instructor-message">
+                            <p>「AIは魔法ではありませんが、Web制作のルールを根本から変える強力なレバーです。本研修では、私が現場で培ってきたプロの視点と、最新のAIエージェント『Antigravity』を融合させた、最も効率的な制作フローを余すことなくお伝えします。」</p>
+                        </div>
+                        <ul class="instructor-career">
+                            <li>Web制作の実務経験10年以上。大手企業のDX支援実績多数。</li>
+                            <li>Antigravityの開発初期から設計に関与し、AI駆動開発のメソッドを確立。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Proof / Goal Section -->
-        <section id="benefits" class="section section-proof section-alt">
+        <section id="benefits" class="section section-proof">
             <div class="container">
                 <div class="grid proof-grid">
                     <div class="proof-content fade-up">
@@ -170,6 +252,7 @@
                             <div class="select-wrapper">
                                 <select id="type" name="type" class="form-input form-select" required>
                                     <option value="" disabled selected>選択してください</option>
+                                    <option value="無料相談">無料オンライン個別相談（30分）</option>
                                     <option value="研修申し込み">研修への申し込み</option>
                                     <option value="資料請求">資料請求</option>
                                     <option value="その他">その他のお問い合わせ</option>
@@ -187,6 +270,7 @@
                                 <span class="btn-text">送信する</span>
                                 <span class="loader" style="display: none;"></span>
                             </button>
+                            <p class="form-microcopy text-center" style="margin-top: 0.75rem; font-size: 0.875rem; color: #64748b;">※最短1営業日以内に担当者よりご返信いたします。</p>
                         </div>
                         
                         <!-- 送信結果メッセージ -->
@@ -204,5 +288,11 @@
     </footer>
 
     <script src="js/main.js?v=2"></script>
+    <!-- Mobile Floating CTA -->
+    <div class="mobile-floating-cta">
+        <a href="#contact" class="btn btn-primary btn-block">
+            研修に申し込む（無料相談）
+        </a>
+    </div>
 </body>
 </html>

@@ -1,0 +1,23 @@
+<svg width="600" height="300" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="300" rx="12" fill="#f8fafc"/>
+  
+  <!-- Left Side: Outsourced -->
+  <text x="80" y="50" fill="#64748b" font-family="Inter, sans-serif" font-size="14" font-weight="600">外部ベンダーへの依頼</text>
+  <rect x="80" y="70" width="120" height="180" rx="6" fill="#e2e8f0"/>
+  <text x="90" y="240" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">Cost: 高額</text>
+  <text x="90" y="220" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">Time: 1ヶ月〜</text>
+  
+  <!-- Comparison Arrow -->
+  <path d="M260 160L340 160M340 160L320 140M340 160L320 180" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Right Side: AI In-house -->
+  <text x="380" y="50" fill="#2563eb" font-family="Inter, sans-serif" font-size="14" font-weight="700">AI活用による内製化</text>
+  <rect x="380" y="210" width="120" height="40" rx="6" fill="#2563eb"/>
+  <text x="390" y="240" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="600">Cost: 0円</text>
+  <text x="390" y="200" fill="#2563eb" font-family="Inter, sans-serif" font-size="12" font-weight="600">Time: 最短2日</text>
+  
+  <!-- Highlight Polish -->
+  <circle cx="440" cy="180" r="30" fill="#2563eb" fill-opacity="0.1"/>
+  <path d="M440 170V190M430 180H450" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+</svg>
