@@ -524,24 +524,12 @@ h1, h2, h3, h4, h5, h6 {
     gap: 3rem;
 }
 
-.roi-visual-container {
-    width: 100%;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-lg);
-}
-
-.roi-graphic {
-    width: 100%;
-    display: block;
-}
-
 .roi-comparison-grid {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .roi-item {
@@ -562,6 +550,10 @@ h1, h2, h3, h4, h5, h6 {
 .roi-item.insourced {
     background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
     border: 2px solid var(--color-accent);
+    transform: scale(1.05); /* Visual emphasis */
+    box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.25);
+    position: relative;
+    z-index: 10;
 }
 
 .roi-name {
